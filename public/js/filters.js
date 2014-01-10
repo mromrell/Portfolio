@@ -22,7 +22,7 @@ angular.module('portfolioApp.filters', [])
         // is the data that is to be filtered, and the second is an
         // argument that may be passed with a colon (searchFor:searchString)
 
-        return function (items, searchString) {
+        return function (items, searchString, strict) {
             //console.log('This is SUPER strict: ' + strict);
             // Checks to see if the search box (search term) is empty
             if (!searchString) {
@@ -35,7 +35,7 @@ angular.module('portfolioApp.filters', [])
             //  A Loop. 'items' = portfolioList. 'item' = portfolioItem.
             angular.forEach(items, function(item) {
                 //console.log('Item: ' + item.description.toLowerCase());
-                if (item.description.toLowerCase().indexOf(searchString) !== -1) {
+                if (item.description.toLowerCase().indexOf(searchString) !== -1 || item.technology == strict) {
                     result.push(item);
                 }
             });
@@ -44,6 +44,19 @@ angular.module('portfolioApp.filters', [])
         };
 
     })
+
+
+
+
+
+    // Testing ------------------------------------------------------------------------------------------
+
+    // END Testing ------------------------------------------------------------------------------------------
+
+
+
+
+
 
     // This Filters the projects being shown by the technologies that are checked
     .filter('techFilter', function () {

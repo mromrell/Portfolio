@@ -25,7 +25,7 @@
 
             <hr>
 
-            <input type="text" ng-model="searchString" placeholder="Search Descriptions"><br>
+            <input type="text" ng-model="searchString" placeholder="Search Descriptions"><br><br>
 
             <!-- This looks through the portfolioList and seperates each technology onto it's own Checkbox/line -->
             <div class="portfolio-showcase">
@@ -42,14 +42,61 @@
 
             <br>
 
+
+
+
+            <!-- TESTING ----------------------------------------------------------------->
+
+            <!--
+            <div ng-controller="MainCtrl">
+            <div ng-repeat="record in records | filter: searchFilter">
+                {{record.Description}}
+
+            </div>
+                <hr/>
+                <h2>Choose Filters:</h2>
+                  <hr/>
+                <div class="Filter">
+                <ul Class="LeftFilter">
+                    <li><b>Filter By Merchant</b></li>
+                    <li ng-repeat="Merchant in MerchantList| orderBy:['-status', 'Merchantname']">
+                        <label><input type="checkbox" ng-model="merchantCheckboxes[Merchant.Merchantname]" /> {{Merchant.Merchantname}}</label>
+                    </li>
+                </ul>
+
+                <ul Class="RightFilter">
+                    <li><b>Filter By Brand</b></li>
+                    <li ng-repeat="Brand in BrandList | orderBy:['-status', 'brandname']">
+                        <label><input type="checkbox" ng-model="brandCheckboxes[Brand.brandname]"/> {{Brand.brandname}}</label>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            -->
+
+            <!-- END TESTING ----------------------------------------------------------------->
+
+
+
+
+
+
             <!-- This is for Testing and should show project titles in the left sidebar -->
+            <!--
             <table class="ng-scope">
                 <tbody>
-                    <tr ng-repeat="portfolioItem in portfolioList | genSearch:searchString techFilter:strict.technology">
+                    <tr ng-repeat="portfolioItem in portfolioList | genSearch:searchString :strict.technology">
                         <td>{{portfolioItem.name}}</td>
                     </tr>
                 </tbody>
             </table>
+            -->
+            <!-- END Testing ---------------------------------------------------------->
+
+
+
+
+
 
             <hr>
 
@@ -62,7 +109,7 @@
         <!------------------------------------------------------------>
 
         <div class="col-sm-8 pull-right">
-            <div ng-repeat="portfolioItem in portfolioList | genSearch:searchString" class="ng-scope">
+            <div ng-repeat="portfolioItem in portfolioList | filter:searchString" class="ng-scope">
                 <div class="row">
                     <div class="col-lg-7 col-md-7">
                         <a ng-href="#/portfolio-project/{{portfolioItem.name | nospace}}"><img class="img-responsive" ng-src="{{portfolioItem.image}}"></a>

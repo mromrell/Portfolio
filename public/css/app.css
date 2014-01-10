@@ -126,3 +126,11 @@ border-left: 5px solid #bce8f1;
 .container {
   background-color: white;
 }
+.RightFilter, .LeftFilter{
+    float:left;
+    width:150px
+}
+.Filter{
+    width:300px;
+
+}
