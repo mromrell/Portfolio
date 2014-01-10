@@ -1,0 +1,84 @@
+<div ng-controller="PortfolioController">
+    <hr>
+    <div class="row">
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="well text-center">
+                    <h1 class="page-header">The Portfolio |
+                        <small>Check out some of my previous work</small>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="row">
+        <!-- Search and Filters-->
+        <div class="pull-left well col-sm-4">
+            <h2>Filter My Projects</h2>
+            <h2 class="thin-small">By Feature</h2>
+
+            <hr>
+
+            <input type="text" ng-model="searchString" placeholder="Search Descriptions"><br>
+
+            <!-- This looks through the portfolioList and seperates each technology onto it's own Checkbox/line -->
+            <div class="portfolio-showcase">
+                <table ng-show="portfolioList" cellspacing="5">
+                    <tr ng-repeat="portfolio in portfolioList | techSearch">
+                        <!--<td><input type="checkbox" ng-model="strict.portfolio.name"> {{ portfolio }}</td>-->
+                        <input type="checkbox" data-ng-model="strict.technology" data-ng-true-value="{{ $index+1 }}"/>{{ portfolio }}
+                    </tr>
+                </table>
+            </div>
+
+            <br>
+
+            <!-- This is for Testing and should show project titles in the left sidebar -->
+            <table class="ng-scope">
+                <tbody>
+                    <tr ng-repeat="portfolioItem in portfolioList | genSearch:searchString | techFilter:strict">
+                        <td>{{portfolioItem.name}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr>
+
+            <div class="bs-callout bs-callout-info">
+                <p><strong>About This Filter:</strong> I built this AJAX filter using Angular JS to dynamically populate my projects as you type out your search term. </p>
+            </div>
+
+        </div>
+
+        <!------------------------------------------------------------>
+
+        <div class="col-sm-8 pull-right">
+            <div ng-repeat="portfolioItem in portfolioList | genSearch:searchString" class="ng-scope">
+                <div class="row">
+                    <div class="col-lg-7 col-md-7">
+                        <a ng-href="#/portfolio-project/{{portfolioItem.name | nospace}}"><img class="img-responsive" ng-src="{{portfolioItem.image}}"></a>
+                    </div>
+
+                    <div class="col-lg-5 col-md-5">
+                        <h3>{{portfolioItem.name}}</h3>
+                        <h4>Subheading</h4>
+
+                        <p>{{portfolioItem.description}}</p>
+                        <a class="btn btn-primary" ng-href="#/portfolio-project/{{portfolioItem.name | nospace}}">View
+                            Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<hr>

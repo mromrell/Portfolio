@@ -37,3 +37,90 @@ div.portfolio-showcase table tr th {
 div.portfolio-showcase table tr.heading {
     background-color: #808080;
 }
+
+
+
+/* ----------------------------------- imported from Bootstrap ------------------------------------*/
+
+body {
+	margin-top: 50px; /* 50px is the height of the navbar - change this if the navbarn height changes */
+    background-image: url("http://www.lumings.com/py/citybg2_mini.jpg");
+    background-repeat: no-repeat;
+    background-color: #272727;
+}
+
+footer {
+	margin: 50px 0;
+}
+.portfolio-item {
+	margin-bottom: 25px;
+}
+
+
+.business-header {
+	height: 400px;
+	background: url(http://placehold.it/1920x400) center center no-repeat;
+	background-size: cover;
+}
+/* change the URL above to a picture of your choice - the higher quality the better! */
+
+/* adjust the color and text shadow to optimize legibility once you have an image set - you can also change the vertical positioning if desired  */
+.tagline {
+	color: #fff;
+	text-shadow: 0 0 10px #000;
+}
+/*.nav {*/
+	/*margin-top: 28px; *//* this is a faux center fix for the nav options - adjust this if you wish to change the logo height or the font of the menu items */
+/*}*/
+
+.bs-callout-info {
+background-color: #f4f8fa;
+border-color: #bce8f1;
+}
+.bs-callout {
+margin: 20px 0;
+padding: 20px;
+border: 1px solid #999999;
+border-left: 5px solid #bce8f1;
+}
+.homewrapper{
+    margin-top: 20px;
+}
+.circular {
+    width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	background: url(http://www.lumings.com/py/headshot-mini.jpg) no-repeat;
+    float: left;
+	}
+.thin{
+    font-weight: 100;
+}
+.thin-small{
+    font-size: 20pt;
+    font-weight: 100;
+    margin-top: -18px;
+}
+.center{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.leftside{
+    float: left;
+}
+.rightside{
+    float: right;
+    width: 50%;
+    padding-left: 10px;
+}
+.no-decoration{
+    list-style: none;
+}
+.spacing{
+    padding-top: 5px;
+}
+

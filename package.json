@@ -6,7 +6,8 @@
         "node": "~0.10.23"
     },
     "dependencies": {
-        "bower": "~1.2.8"
+        "bower": "~1.2.8",
+        "nodemailer":"~0.6.0"
     },
     "devDependencies": {
         "phantomjs": "~1.9",
