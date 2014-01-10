@@ -31,8 +31,11 @@
             <div class="portfolio-showcase">
                 <table ng-show="portfolioList" cellspacing="5">
                     <tr ng-repeat="portfolio in portfolioList | techSearch">
-                        <!--<td><input type="checkbox" ng-model="strict.portfolio.name"> {{ portfolio }}</td>-->
-                        <input type="checkbox" data-ng-model="strict.technology" data-ng-true-value="{{ $index+1 }}"/>{{ portfolio }}
+                        <td>
+                            <!--<input type="checkbox" ng-model="strict.portfolio.name"> {{ portfolio }}-->
+                            <input type="checkbox" data-ng-model="strict.technology" data-ng-true-value="{{ $index+1 }}"/> {{ portfolio }}
+                        </td>
+
                     </tr>
                 </table>
             </div>
@@ -42,7 +45,7 @@
             <!-- This is for Testing and should show project titles in the left sidebar -->
             <table class="ng-scope">
                 <tbody>
-                    <tr ng-repeat="portfolioItem in portfolioList | genSearch:searchString | techFilter:strict">
+                    <tr ng-repeat="portfolioItem in portfolioList | genSearch:searchString techFilter:strict.technology">
                         <td>{{portfolioItem.name}}</td>
                     </tr>
                 </tbody>

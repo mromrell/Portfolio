@@ -22,8 +22,8 @@ angular.module('portfolioApp.filters', [])
         // is the data that is to be filtered, and the second is an
         // argument that may be passed with a colon (searchFor:searchString)
 
-        return function (items, searchString, strict) {
-            console.log('This is SUPER strict: ' + strict);
+        return function (items, searchString) {
+            //console.log('This is SUPER strict: ' + strict);
             // Checks to see if the search box (search term) is empty
             if (!searchString) {
                 return items;
@@ -45,6 +45,7 @@ angular.module('portfolioApp.filters', [])
 
     })
 
+    // This Filters the projects being shown by the technologies that are checked
     .filter('techFilter', function () {
 
         // All filters must return a function. The first parameter 'items'
@@ -74,6 +75,7 @@ angular.module('portfolioApp.filters', [])
 
     })
 
+    //This looks through all of the technologies listed in the portfolioList and returns only the unique values
     .filter('techSearch', function () {
 
         return function (items) {
