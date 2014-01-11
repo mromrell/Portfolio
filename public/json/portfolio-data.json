@@ -4,9 +4,8 @@
         "name": "Project 1",
         "headline": "Dynamic Search App for Instant Results",
         "image": "http://placekitten.com/700/300",
-        "technology": ["JSON", "AngularJS","Good point","CSS","Wyoming"],
-        "MerchantName": "Fashion and You",
-        "BrandList": " Nike, Fila",
+        "BrandList": "JSON,AngularJS,HTML,CSS,Wyoming",
+        "MerchantName": "BIG CO",
         "description": "Words about this Project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim."
 
     },
@@ -15,9 +14,8 @@
         "name": "Project 2",
         "headline": "Dynamic Search App for Instant Results",
         "image": "http://placekitten.com/700/300",
-        "technology": ["AngularJS","Good point","stuff","Wyoming"],
+        "BrandList": "AngularJS,Good point,stuff,Wyoming",
         "MerchantName": "billiam",
-        "BrandList": " Nike, Fila, jimbert",
         "description": "Words about this Project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim."
     },
     "project-3": {
@@ -25,7 +23,8 @@
         "name": "Project 3",
         "headline": "Dynamic Search App for Instant Results",
         "image": "http://placekitten.com/700/300",
-        "technology": ["JSON","Good point","stuff","Wyoming"],
+        "BrandList": "JSON,Good point,stuff,Wyoming",
+        "MerchantName": "Michael Firm",
         "description": "Words about this Project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim."
     },
     "project-4": {
@@ -33,7 +32,8 @@
         "name": "Project 4",
         "headline": "Dynamic Search App for Instant Results",
         "image": "http://placekitten.com/700/300",
-        "technology": ["JSON","AngularJS","HTML","stuff","Wyoming","Walter"],
+        "BrandList": "JSON,AngularJS,HTML,stuff,Wyoming,Walter",
+        "MerchantName": "company",
         "description": "Words about this Project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim."
     }
 }

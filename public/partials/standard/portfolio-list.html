@@ -42,59 +42,29 @@
 
             <br>
 
-
-
-
-            <!-- TESTING ----------------------------------------------------------------->
-
-            <!--
-            <div ng-controller="MainCtrl">
-            <div ng-repeat="record in records | filter: searchFilter">
-                {{record.Description}}
-
-            </div>
-                <hr/>
-                <h2>Choose Filters:</h2>
-                  <hr/>
+            <!--<div ng-controller="MainCtrl"></div>-->
                 <div class="Filter">
-                <ul Class="LeftFilter">
-                    <li><b>Filter By Merchant</b></li>
-                    <li ng-repeat="Merchant in MerchantList| orderBy:['-status', 'Merchantname']">
-                        <label><input type="checkbox" ng-model="merchantCheckboxes[Merchant.Merchantname]" /> {{Merchant.Merchantname}}</label>
-                    </li>
-                </ul>
+                    <!--
+                    <ul Class="LeftFilter">
+                        <li><b>Filter By Merchant</b></li>
+                        <li ng-repeat="Merchant in MerchantList| orderBy:['-status', 'Merchantname']">
+                            <label><input type="checkbox" ng-model="merchantCheckboxes[Merchant.Merchantname]" /> {{Merchant.Merchantname}}</label>
+                        </li>
+                    </ul>
+                    -->
 
-                <ul Class="RightFilter">
-                    <li><b>Filter By Brand</b></li>
-                    <li ng-repeat="Brand in BrandList | orderBy:['-status', 'brandname']">
+                    <li class="no-decoration" ng-repeat="Brand in BrandList | orderBy:['-status', 'brandname']">
                         <label><input type="checkbox" ng-model="brandCheckboxes[Brand.brandname]"/> {{Brand.brandname}}</label>
                     </li>
-                </ul>
                 </div>
-            </div>
-            -->
-
-            <!-- END TESTING ----------------------------------------------------------------->
-
-
-
-
 
 
             <!-- This is for Testing and should show project titles in the left sidebar -->
-            <!--
-            <table class="ng-scope">
-                <tbody>
-                    <tr ng-repeat="portfolioItem in portfolioList | genSearch:searchString :strict.technology">
-                        <td>{{portfolioItem.name}}</td>
-                    </tr>
-                </tbody>
-            </table>
-            -->
+                <div ng-repeat="record in portfolioListArray | filter: searchFilter">
+                    {{record.name}}<br>
+                </div>
+
             <!-- END Testing ---------------------------------------------------------->
-
-
-
 
 
 
@@ -109,10 +79,10 @@
         <!------------------------------------------------------------>
 
         <div class="col-sm-8 pull-right">
-            <div ng-repeat="portfolioItem in portfolioList | filter:searchString" class="ng-scope">
+            <div ng-repeat="portfolioItem in portfolioList | genSearch:searchString | filter: searchFilter" class="ng-scope">
                 <div class="row">
                     <div class="col-lg-7 col-md-7">
-                        <a ng-href="#/portfolio-project/{{portfolioItem.name | nospace}}"><img class="img-responsive" ng-src="{{portfolioItem.image}}"></a>
+                        <a ng-href="#/portfolio-project/{{portfolioItem.name | nospace }}"><img class="img-responsive" ng-src="{{portfolioItem.image}}"></a>
                     </div>
 
                     <div class="col-lg-5 col-md-5">

@@ -15,6 +15,27 @@ angular.module('portfolioApp.filters', [])
         }
     }])
 
+/*    .filter('checkFilter', function(){
+        return function(row){
+            var mercChecked = getChecked($scope.merchantCheckboxes);
+            var brandChecked = getChecked($scope.brandCheckboxes);
+            if(mercChecked.length == 0 && brandChecked.length == 0)
+                return true;
+            else{
+                if(($scope.merchantCheckboxes[row.MerchantName] && brandChecked.length==0)
+                  || (mercChecked.length == 0 && row.BrandList.split(/,\s*//*).some(function(brand){
+                        return $scope.brandCheckboxes[brand];
+                    }))
+                  || ($scope.merchantCheckboxes[row.MerchantName] && row.BrandList.split(/,\s*//*).some(function(brand){
+                        return $scope.brandCheckboxes[brand];
+                    })))
+                    return true;
+                else{
+                    return false;
+                }
+            }
+        };
+    })*/
 
     .filter('genSearch', function () {
 
