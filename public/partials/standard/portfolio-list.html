@@ -28,17 +28,17 @@
             <input type="text" ng-model="searchString" placeholder="Search Descriptions"><br><br>
 
             <!-- This looks through the portfolioList and seperates each technology onto it's own Checkbox/line -->
-            <div class="portfolio-showcase">
+<!--            <div class="portfolio-showcase">
                 <table ng-show="portfolioList" cellspacing="5">
                     <tr ng-repeat="portfolio in portfolioList | techSearch">
                         <td>
-                            <!--<input type="checkbox" ng-model="strict.portfolio.name"> {{ portfolio }}-->
+                            &lt;!&ndash;<input type="checkbox" ng-model="strict.portfolio.name"> {{ portfolio }}&ndash;&gt;
                             <input type="checkbox" data-ng-model="strict.technology" data-ng-true-value="{{ $index+1 }}"/> {{ portfolio }}
                         </td>
 
                     </tr>
                 </table>
-            </div>
+            </div>-->
 
             <br>
             <!--  http://jsfiddle.net/TheSharpieOne/ZebC7/   -->
