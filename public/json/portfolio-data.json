@@ -1,38 +1,42 @@
 {
-    "project-1": {
+    "custom-proposal-app": {
         "id": "1",
-        "name": "Project 1",
-        "headline": "Dynamic Search App for Instant Results",
-        "image": "http://placekitten.com/700/300",
-        "BrandList": "JSON,AngularJS,HTML,CSS,Wyoming",
+        "name": "Custom Proposal App",
+        "headline": "Create custom proposals for your organization",
+        "image": "img/proposaltool.png",
+        "BrandList": "RestfulAPI,AngularJS,HTML,CSS,Javascript,NodeJS,Mongo,Express,Jade",
+        "technology": ["RestfulAPI","AngularJS","HTML","CSS","Javascript","NodeJS","Mongo","Express","Jade"],
         "MerchantName": "BIG CO",
-        "description": "Words about this Project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim."
+        "description": "I built this app to allow companies to create their own client-facing proposal tools. In other words, this app will allow you to create an account, then create a new proposal, and dynamically fill it with custom questions. They can assign each question (and that question's options) a value (ex: $300 for option 'A'). This let's a sales team walk through the newly created survey and get an immediate price returned to them. "
 
     },
-    "project-2": {
+    "21-zero": {
         "id": "2",
-        "name": "Project 2",
-        "headline": "Dynamic Search App for Instant Results",
-        "image": "http://placekitten.com/700/300",
+        "name": "21 Zero",
+        "headline": "My business for building sites, apps and marketing",
+        "image": "img/21zerosite.png",
         "BrandList": "AngularJS,Good point,stuff,Wyoming",
+        "technology": ["HTML","CSS","Wordpress","MySQL"],
         "MerchantName": "billiam",
-        "description": "Words about this Project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim."
+        "description": "I stay pretty busy running my own business. In addition to building this site as an advertising piece, I work alongside my other developers to build many of our clients sites. We also build web apps and do a lot of online marketing. Search engine optimization (SEO), Pay Per Click (PPC), Social and content marketing"
     },
-    "project-3": {
+    "detour-journal": {
         "id": "3",
-        "name": "Project 3",
-        "headline": "Dynamic Search App for Instant Results",
-        "image": "http://placekitten.com/700/300",
+        "name": "Detour Journal",
+        "headline": "Community of adventure motorcycle bloggers",
+        "image": "img/detourjournal.png",
         "BrandList": "JSON,Good point,stuff,Wyoming",
+        "technology": ["HTML","CSS","Joomla","MySQL"],
         "MerchantName": "Michael Firm",
         "description": "Words about this Project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim."
     },
-    "project-4": {
+    "dex-custom-websites": {
         "id": "4",
-        "name": "Project 4",
-        "headline": "Dynamic Search App for Instant Results",
-        "image": "http://placekitten.com/700/300",
+        "name": "Dex Custom Websites",
+        "headline": "Managed the development team that built 1000's of custom websites",
+        "image": "img/dexcustom.png",
         "BrandList": "JSON,AngularJS,HTML,stuff,Wyoming,Walter",
+        "technology": ["HTML","CSS","Wordpress","MySQL","Magento"],
         "MerchantName": "company",
         "description": "Words about this Project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim."
     }

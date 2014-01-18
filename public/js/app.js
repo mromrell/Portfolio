@@ -15,7 +15,7 @@ var portfolioApp = angular.module('portfolioApp', [
             title: 'Home Page',
             nav:'partials/standard/header.tpl.html',
             footer:'partials/standard/footer.tpl.html',
-            portfoliolist:'partials/standard/portfolio-list.html',
+            portfoliolist:'partials/standard/portfolio-list.html'
             });
         $routeProvider.when('/about', {
             templateUrl: 'partials/about.html',
@@ -32,7 +32,7 @@ var portfolioApp = angular.module('portfolioApp', [
         $routeProvider.when('/portfolio-project/:id', {
             templateUrl: 'partials/portfolio-item.html',
             controller: 'ProjectController', // 'PortfolioController',
-            title: 'Bootstrapped Project Page',
+            title: 'Project Detail Page',
             nav:'partials/standard/header.tpl.html',
             footer:'partials/standard/footer.tpl.html',
             portfoliolist:'partials/standard/portfolio-list.html'

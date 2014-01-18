@@ -44,7 +44,7 @@ div.portfolio-showcase table tr.heading {
 
 body {
 	margin-top: 50px; /* 50px is the height of the navbar - change this if the navbarn height changes */
-    background-image: url("http://www.lumings.com/py/citybg2_mini.jpg");
+    background-image: url("../img/citybg2_mini.jpg");
     background-repeat: no-repeat;
     background-color: #272727;
 }
@@ -92,7 +92,7 @@ border-left: 5px solid #bce8f1;
 	border-radius: 25px;
 	-webkit-border-radius: 25px;
 	-moz-border-radius: 25px;
-	background: url(http://www.lumings.com/py/headshot-mini.jpg) no-repeat;
+	background: url(../img/headshot-mini.jpg) no-repeat;
     float: left;
 	}
 .thin{
