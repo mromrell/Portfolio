@@ -5,9 +5,9 @@
         "headline": "Create custom proposals for your organization",
         "image": "img/proposaltool.png",
         "BrandList": "RestfulAPI,AngularJS,HTML,CSS,Javascript,NodeJS,Mongo,Express,Jade",
-        "technology": ["RestfulAPI","AngularJS","HTML","CSS","Javascript","NodeJS","Mongo","Express","Jade"],
+        "technology": ["RestfulAPI","AAAAAHH","AngularJS","HTML","CSS","Javascript","NodeJS","Mongo","Express","Jade"],
         "MerchantName": "BIG CO",
-        "description": "I built this app to allow companies to create their own client-facing proposal tools. In other words, this app will allow you to create an account, then create a new proposal, and dynamically fill it with custom questions. They can assign each question (and that question's options) a value (ex: $300 for option 'A'). This let's a sales team walk through the newly created survey and get an immediate price returned to them. "
+        "description": "I built this app to allow companies to create their own client-facing proposals. In other words, this app will allow you to create an account, then create a new proposal, and dynamically fill it with custom questions. They can assign each question (and that question's options) a value (ex: $300 for option 'A'). This let's a sales team walk through the newly created survey with a client and give them an immediate price quote. "
 
     },
     "21-zero": {
@@ -15,7 +15,7 @@
         "name": "21 Zero",
         "headline": "My business for building sites, apps and marketing",
         "image": "img/21zerosite.png",
-        "BrandList": "AngularJS,Good point,stuff,Wyoming",
+        "BrandList": "HTML,CSS,Wordpress,MySQL",
         "technology": ["HTML","CSS","Wordpress","MySQL"],
         "MerchantName": "billiam",
         "description": "I stay pretty busy running my own business. In addition to building this site as an advertising piece, I work alongside my other developers to build many of our clients sites. We also build web apps and do a lot of online marketing. Search engine optimization (SEO), Pay Per Click (PPC), Social and content marketing"
@@ -25,7 +25,7 @@
         "name": "Detour Journal",
         "headline": "Community of adventure motorcycle bloggers",
         "image": "img/detourjournal.png",
-        "BrandList": "JSON,Good point,stuff,Wyoming",
+        "BrandList": "HTML,CSS,Joomla,MySQL",
         "technology": ["HTML","CSS","Joomla","MySQL"],
         "MerchantName": "Michael Firm",
         "description": "Words about this Project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim."
@@ -35,7 +35,7 @@
         "name": "Dex Custom Websites",
         "headline": "Managed the development team that built 1000's of custom websites",
         "image": "img/dexcustom.png",
-        "BrandList": "JSON,AngularJS,HTML,stuff,Wyoming,Walter",
+        "BrandList": "HTML,CSS,Wordpress,MySQL,Magento",
         "technology": ["HTML","CSS","Wordpress","MySQL","Magento"],
         "MerchantName": "company",
         "description": "Words about this Project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim."

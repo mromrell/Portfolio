@@ -135,11 +135,12 @@ angular.module('portfolioApp.controllers', [])
         PortfolioListService.success(function(data) {
             $scope.portfolioList = data;
         });
-
-        $scope.portfolioList = [];
+        //console.log($scope.portfolioListArray);
+        //$scope.portfolioList = [];
 
         var portfolioListArray = [], item;
-        $scope.portfolioListArray = portfolioListArray
+        $scope.portfolioListArray = portfolioListArray;
+
 
         PortfolioListService.success(function(data) {
             for (var type in data) {
@@ -149,8 +150,19 @@ angular.module('portfolioApp.controllers', [])
                 $scope.portfolioListArray.push(item);
 
             }
-            console.log(" In the For Loop &______&________&_&&&&&&_________: " + JSON.stringify(portfolioListArray))
-            //console.log(" _____&______&________&_&&&&&&_________: " + JSON.stringify($scope.portfolioListArray))
+//            console.log("the length is:");
+//            console.log($scope.portfolioListArray.length);
+//            $scope.bigtech = [];
+//            $scope.technologies = [];
+//
+//            for (var i=0; i <$scope.portfolioListArray.length; i++){
+//                $scope.bigtech.push($scope.portfolioListArray[i].technology);
+//                console.log($scope.bigtech);
+//                    for (var x=0; x <$scope.bigtech[i].length; x++){
+//                        $scope.technologies.push($scope.bigtech[x]);
+//                        console.log($scope.technologies);
+//                    }
+//            }
 
 
 
@@ -161,16 +173,16 @@ angular.module('portfolioApp.controllers', [])
                 for(var key in obj) if(obj[key]) checked.push(key);
                 return checked;
             }
-            $scope.orderChecked = function(item){
-                if(item.Merchantname && $scope.merchantCheckboxes[item.Merchantname])
-                    return 0;
-                else if(item.brandname && item.brandname.split(/,\s*/).some(function(brand){
-                            return $scope.brandCheckboxes[brand];
-                        }))
-                    return 0;
-                else
-                    return 1;
-            };
+//            $scope.orderChecked = function(item){
+//                if(item.Merchantname && $scope.merchantCheckboxes[item.Merchantname])
+//                    return 0;
+//                else if(item.brandname && item.brandname.split(/,\s*/).some(function(brand){
+//                            return $scope.brandCheckboxes[brand];
+//                        }))
+//                    return 0;
+//                else
+//                    return 1;
+//            };
             $scope.searchFilter = function(row){
                 var mercChecked = getChecked($scope.merchantCheckboxes);
                 var brandChecked = getChecked($scope.brandCheckboxes);

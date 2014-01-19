@@ -18,7 +18,7 @@
 
 
     <div class="row">
-        <!-- Search and Filters-->
+        <!----------------------------- Search and Filters----------------------------->
         <div class="pull-left well col-sm-3">
             <h2>Filter My Projects</h2>
             <h2 class="thin-small">By Feature</h2>
@@ -26,48 +26,13 @@
             <hr>
 
             <input type="text" ng-model="searchString" placeholder="Search Descriptions"><br><br>
-
-            <!-- This looks through the portfolioList and seperates each technology onto it's own Checkbox/line -->
-<!--            <div class="portfolio-showcase">
-                <table ng-show="portfolioList" cellspacing="5">
-                    <tr ng-repeat="portfolio in portfolioList | techSearch">
-                        <td>
-                            &lt;!&ndash;<input type="checkbox" ng-model="strict.portfolio.name"> {{ portfolio }}&ndash;&gt;
-                            <input type="checkbox" data-ng-model="strict.technology" data-ng-true-value="{{ $index+1 }}"/> {{ portfolio }}
-                        </td>
-
-                    </tr>
-                </table>
-            </div>-->
-
             <br>
             <!--  http://jsfiddle.net/TheSharpieOne/ZebC7/   -->
-            <!--<div ng-controller="MainCtrl"></div>-->
-                <div class="Filter">
-                    <!--
-                    <ul Class="LeftFilter">
-                        <li><b>Filter By Merchant</b></li>
-                        <li ng-repeat="Merchant in MerchantList| orderBy:['-status', 'Merchantname']">
-                            <label><input type="checkbox" ng-model="merchantCheckboxes[Merchant.Merchantname]" /> {{Merchant.Merchantname}}</label>
-                        </li>
-                    </ul>
-                    -->
-
-                    <li class="no-decoration" ng-repeat="Brand in BrandList | orderBy:['-status', 'brandname']">
-                        <label><input type="checkbox" ng-model="brandCheckboxes[Brand.brandname]"/> {{Brand.brandname}}</label>
-                    </li>
-                </div>
-
-
-            <!-- This is for Testing and should show project titles in the left sidebar -->
-                <div ng-repeat="record in portfolioListArray | filter: searchFilter">
-                    {{record.name}}<br>
-                </div>
-
-            <!-- END Testing ---------------------------------------------------------->
-
-
-
+            <div class="Filter">
+                <li class="no-decoration" ng-repeat="Brand in BrandList | orderBy:['-status', 'brandname']">
+                    <label><input type="checkbox" ng-model="brandCheckboxes[Brand.brandname]"/> {{Brand.brandname}}</label>
+                </li>
+            </div>
             <hr>
 
             <div class="bs-callout bs-callout-info">
@@ -76,10 +41,10 @@
 
         </div>
 
-        <!------------------------------------------------------------>
+        <!--------------------------- Project list --------------------------------->
 
         <div class="col-sm-9 pull-right">
-            <div ng-repeat="portfolioItem in portfolioList | genSearch:searchString" class="ng-scope">
+            <div ng-repeat="portfolioItem in portfolioListArray | genSearch:searchString | filter: searchFilter" class="ng-scope">
                 <div class="row">
                     <div class="col-lg-7 col-md-7">
                         <a ng-href="#/portfolio-project/{{portfolioItem.name | nospace }}"><img class="img-responsive" ng-src="{{portfolioItem.image}}"></a>
