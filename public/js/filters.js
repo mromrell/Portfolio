@@ -9,9 +9,15 @@ angular.module('portfolioApp.filters', [])
         }
     }])
 
-    .filter('lenLimit', [ function () {
+    .filter('lenLimit100', [ function () {
         return function (text) {
-            return String(text).substring(0, 100);
+            return String(text).substring(0, 100)+"...";
+        }
+    }])
+
+    .filter('lenLimit200', [ function () {
+        return function (text) {
+            return String(text).substring(0, 200)+"...";
         }
     }])
 
