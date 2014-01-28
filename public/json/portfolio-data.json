@@ -1,44 +1,68 @@
 {
-    "custom-proposal-app": {
+
+    "placer": {
         "id": "1",
+        "name": "Placer",
+        "headline": "Community for travels and explorers",
+        "image": "img/placerscreenshot.png",
+        "BrandList": "HTML,CSS,Django,Python,AngularJS,Javascript,Jquery",
+        "technology": ["HTML","CSS","Django","Python","AngularJS","Javascript","Jquery"],
+        "description": "I like to explore new things, so I really love finding cool new places that many people don't really know about. I built this web application so that I (and anyone else who wants to join) can share the cool places they are are finding. This site is built with AngularJS and javascript on the frontend and powered by Django and Python on the server-side. I like Django because it's pretty straightforward and well documented. It's worth noting that I built everything on this site from scratch including the Login, Create and edit a location, the Ajax Filters and the javascript logic that powers all the dynamic content you see on the site. And yes, just about everything on the site is dynamic and responsive."
+    },
+    "custom-proposal-app": {
+        "id": "2",
         "name": "Custom Proposal App",
         "headline": "Create custom proposals for your organization",
         "image": "img/proposaltool.png",
         "BrandList": "RestfulAPI,AngularJS,HTML,CSS,Javascript,NodeJS,Mongo,Express,Jade",
         "technology": ["RestfulAPI","AAAAAHH","AngularJS","HTML","CSS","Javascript","NodeJS","Mongo","Express","Jade"],
-        "MerchantName": "BIG CO",
         "description": "I built this app to allow companies to create their own client-facing proposals. In other words, this app will allow you to create an account, then create a new proposal, and dynamically fill it with custom questions. They can assign each question (and that question's options) a value (ex: $300 for option 'A'). This let's a sales team walk through the newly created survey with a client and give them an immediate price quote. "
 
     },
     "21-zero": {
-        "id": "2",
+        "id": "3",
         "name": "21 Zero",
         "headline": "My business for building sites, apps and marketing",
         "image": "img/21zerosite.png",
         "BrandList": "HTML,CSS,Wordpress,MySQL",
         "technology": ["HTML","CSS","Wordpress","MySQL"],
-        "MerchantName": "billiam",
         "description": "I stay pretty busy running my own business. In addition to building this site as an advertising piece, I work alongside my other developers to build many of our clients sites. We also build web apps and do a lot of online marketing. Search engine optimization (SEO), Pay Per Click (PPC), Social and content marketing"
     },
     "detour-journal": {
-        "id": "3",
+        "id": "4",
         "name": "Detour Journal",
         "headline": "Community of adventure motorcycle bloggers",
         "image": "img/detourjournal.png",
         "BrandList": "HTML,CSS,Joomla,MySQL",
         "technology": ["HTML","CSS","Joomla","MySQL"],
-        "MerchantName": "Michael Firm",
-        "description": "Words about this Project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim."
+        "description": "I built this site originally as a way to provide an income to the many awesome adventurers out there who are trying to support themselves while riding their motorcycles around the world. I chose to use Joomla! for this project because not only was I familiar with the CMS it had a perfect plugin that I could modify to allow users to signup, create an account and begin adding content to their very own adventure travel blog. The site also has a fully functioning e-commerce store that I have recently turned off as a result of issues with my supplier. But I hope to bring it back online soon!"
     },
     "dex-custom-websites": {
-        "id": "4",
+        "id": "5",
         "name": "Dex Custom Websites",
         "headline": "Managed the development team that built 1000's of custom websites",
         "image": "img/dexcustom.png",
         "BrandList": "HTML,CSS,Wordpress,MySQL,Magento",
         "technology": ["HTML","CSS","Wordpress","MySQL","Magento"],
-        "MerchantName": "company",
         "description": "Words about this Project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim."
+    },
+    "conversion-jump": {
+        "id": "6",
+        "name": "Conversion Jump",
+        "headline": "My conversion rate optimization blog",
+        "image": "img/conversionjump.jpg",
+        "BrandList": "HTML,CSS,Joomla,MySQL",
+        "technology": ["HTML","CSS","Joomla","MySQL"],
+        "description": "I no longer maintain this blog but I still love Conversion Rate Optimization. There is no easier way to double or triple your sales than to improve your websites conversion rate. I built this blog on the Joomla! CMS primarily because I wasn't concerned about building new features. It was afterall, just a blog that allowed me to learn a lot about one of my favorite topics."
+    },
+    "the-canyons-pass": {
+        "id": "7",
+        "name": "The Canyons Pass",
+        "headline": "Increased the conversion rate from 6% to 43%",
+        "image": "img/canyonspass.jpg",
+        "BrandList": "HTML,CSS",
+        "technology": ["HTML","CSS","Joomla","MySQL"],
+        "description": "I created this site for one reason only... Get free Season Ski Passes. In college I became an affiliate for one of the major local ski resorts, and for every 10 season passes I sold I got a free pass for myself and my friends. Not having the time to got out and sell in person, I built TheCanyonsPass.com and ran a high converting online ad campaign that did all the work for me. It was great!"
     }
 }
 

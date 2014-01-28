@@ -54,7 +54,7 @@
                         <h3>{{portfolioItem.name}}</h3>
                         <h4>{{portfolioItem.headline}}</h4>
 
-                        <p>{{portfolioItem.description}}</p>
+                        <p>{{portfolioItem.description | lenLimit200}}</p>
                         <a class="btn btn-primary" ng-href="#/portfolio-project/{{portfolioItem.name | nospace}}">View
                             Project <span class="glyphicon glyphicon-chevron-right"></span></a>
                     </div>
