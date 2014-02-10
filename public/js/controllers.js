@@ -10,17 +10,6 @@ angular.module('portfolioApp.controllers', [])
             $scope.image1 = !$scope.image1;
         };
     })
-
-
-
-
-
-
-
-
-
-//    Testing ------------------------------------------------------------------------
-
     .controller('MainCtrl', function ($scope, PortfolioListService) {
         /*$scope.portfolioList = [];
 
@@ -118,6 +107,19 @@ angular.module('portfolioApp.controllers', [])
         $scope.portfolioList = {};
         PortfolioListService.success(function(data) {
             $scope.portfolioList = data;
+            $scope.rows = [];
+            var i = 0;
+            var row = [];
+            for (var portfolioItem in $scope.portfolioList){
+                row.push($scope.portfolioList[portfolioItem]);
+                i++;
+                if (i%4==0){
+                    i=0;
+                    $scope.rows.push(row);
+                    row = [];
+                }
+
+            }
         });
 
         //This is used to choose the right project data to display based on the URL/project selected
@@ -132,8 +134,10 @@ angular.module('portfolioApp.controllers', [])
         $scope.portfolioList = {};
         $scope.strict = {};
 
+
         PortfolioListService.success(function(data) {
             $scope.portfolioList = data;
+
         });
         //console.log($scope.portfolioListArray);
         //$scope.portfolioList = [];
