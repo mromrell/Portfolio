@@ -11,89 +11,9 @@ angular.module('portfolioApp.controllers', [])
         };
     })
     .controller('MainCtrl', function ($scope, PortfolioListService) {
-        /*$scope.portfolioList = [];
-
-        var portfolioListArray = [], item;
-        $scope.portfolioListArray = portfolioListArray
-
-        PortfolioListService.success(function(data) {
-            for (var type in data) {
-                item = {};
-
-                item = data[type];
-                $scope.portfolioListArray.push(item);
-
-            }
-            console.log(" In the For Loop &______&________&_&&&&&&_________: " + JSON.stringify(portfolioListArray))
-            //console.log(" _____&______&________&_&&&&&&_________: " + JSON.stringify($scope.portfolioListArray))
-
-
-
-            $scope.merchantCheckboxes = {};
-            $scope.brandCheckboxes = {};
-            function getChecked(obj){
-                var checked = [];
-                for(var key in obj) if(obj[key]) checked.push(key);
-                return checked;
-            }
-            $scope.orderChecked = function(item){
-                if(item.Merchantname && $scope.merchantCheckboxes[item.Merchantname])
-                    return 0;
-                else if(item.brandname && item.brandname.split(/,\s*//*).some(function(brand){
-                            return $scope.brandCheckboxes[brand];
-                        }))
-                    return 0;
-                else
-                    return 1;
-            };
-            $scope.searchFilter = function(row){
-                var mercChecked = getChecked($scope.merchantCheckboxes);
-                var brandChecked = getChecked($scope.brandCheckboxes);
-                if(mercChecked.length == 0 && brandChecked.length == 0)
-                    return true;
-                else{
-                    if(($scope.merchantCheckboxes[row.MerchantName] && brandChecked.length==0)
-                      || (mercChecked.length == 0 && row.BrandList.split(/,\s*//*).some(function(brand){
-                            return $scope.brandCheckboxes[brand];
-                        }))
-                      || ($scope.merchantCheckboxes[row.MerchantName] && row.BrandList.split(/,\s*//*).some(function(brand){
-                            return $scope.brandCheckboxes[brand];
-                        })))
-                        return true;
-                    else{
-                        return false;
-                    }
-                }
-            };
-
-                $scope.MerchantList = _.uniq(_.pluck($scope.portfolioListArray, 'MerchantName'));
-                $scope.MerchantList = _.map($scope.MerchantList, function(Merchant){
-                return { Merchantname : $.trim(Merchant), status : false};
-            });
-                $scope.BrandList = [];
-
-                _.each($scope.portfolioListArray, function(i){
-               if(i.BrandList)
-                               $scope.BrandList = _.union($scope.BrandList,i.BrandList.split(','));
-            });
-
-            $scope.BrandList = _.map($scope.BrandList, function(brand){
-                return { brandname : $.trim(brand), status : false};
-            });
-
-        }); // end Portfolio List service*/
     })
 
 //   End Testing ------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
 
     .controller('ContactController', function ($scope) {
     })
@@ -137,6 +57,10 @@ angular.module('portfolioApp.controllers', [])
 
         PortfolioListService.success(function(data) {
             $scope.portfolioList = data;
+            $scope.portfolioArray =[];
+            for (var portfolioItem in $scope.portfolioList){
+                $scope.portfolioArray.push($scope.portfolioList[portfolioItem]);
+            }
 
         });
         //console.log($scope.portfolioListArray);
@@ -154,20 +78,6 @@ angular.module('portfolioApp.controllers', [])
                 $scope.portfolioListArray.push(item);
 
             }
-//            console.log("the length is:");
-//            console.log($scope.portfolioListArray.length);
-//            $scope.bigtech = [];
-//            $scope.technologies = [];
-//
-//            for (var i=0; i <$scope.portfolioListArray.length; i++){
-//                $scope.bigtech.push($scope.portfolioListArray[i].technology);
-//                console.log($scope.bigtech);
-//                    for (var x=0; x <$scope.bigtech[i].length; x++){
-//                        $scope.technologies.push($scope.bigtech[x]);
-//                        console.log($scope.technologies);
-//                    }
-//            }
-
 
 
             $scope.merchantCheckboxes = {};
@@ -177,16 +87,6 @@ angular.module('portfolioApp.controllers', [])
                 for(var key in obj) if(obj[key]) checked.push(key);
                 return checked;
             }
-//            $scope.orderChecked = function(item){
-//                if(item.Merchantname && $scope.merchantCheckboxes[item.Merchantname])
-//                    return 0;
-//                else if(item.brandname && item.brandname.split(/,\s*/).some(function(brand){
-//                            return $scope.brandCheckboxes[brand];
-//                        }))
-//                    return 0;
-//                else
-//                    return 1;
-//            };
             $scope.searchFilter = function(row){
                 var mercChecked = getChecked($scope.merchantCheckboxes);
                 var brandChecked = getChecked($scope.brandCheckboxes);

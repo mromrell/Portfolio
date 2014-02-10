@@ -44,7 +44,7 @@
         <!--------------------------- Project list --------------------------------->
 
         <div class="col-sm-9 pull-right">
-            <div ng-repeat="portfolioItem in portfolioListArray | genSearch:searchString | filter: searchFilter" class="ng-scope">
+            <div ng-repeat="portfolioItem in portfolioArray | genSearch:searchString | filter: searchFilter" class="ng-scope">
                 <div class="row">
                     <div class="col-lg-7 col-md-7">
                         <a ng-href="#/portfolio-project/{{portfolioItem.name | nospace }}"><img class="img-responsive" ng-src="{{portfolioItem.image}}"></a>
@@ -63,6 +63,27 @@
             </div>
 
         </div>
+
+        <!--<div class="col-sm-9 pull-right">
+            <div ng-repeat="portfolioItem in portfolioListArray | genSearch:searchString | filter: searchFilter" class="ng-scope">
+                <div class="row">
+                    <div class="col-lg-7 col-md-7">
+                        <a ng-href="#/portfolio-project/{{portfolioItem.name | nospace }}"><img class="img-responsive" ng-src="{{portfolioItem.image}}"></a>
+                    </div>
+
+                    <div class="col-lg-5 col-md-5">
+                        <h3>{{portfolioItem.name}}</h3>
+                        <h4>{{portfolioItem.headline}}</h4>
+
+                        <p>{{portfolioItem.description | lenLimit200}}</p>
+                        <a class="btn btn-primary" ng-href="#/portfolio-project/{{portfolioItem.name | nospace}}">View
+                            Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+        </div>-->
     </div>
 </div>
 
