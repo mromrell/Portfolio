@@ -32,6 +32,9 @@
                 <li class="no-decoration" ng-repeat="Brand in BrandList | orderBy:['-status', 'brandname']">
                     <label><input type="checkbox" ng-model="brandCheckboxes[Brand.brandname]"/> {{Brand.brandname}}</label>
                 </li>
+                <!--<li class="no-decoration" ng-repeat="tech in technologyArray">
+                    <label><input type="checkbox" ng-model="strict"/> {{tech}}</label>
+                </li>-->
             </div>
             <hr>
 
@@ -44,7 +47,9 @@
         <!--------------------------- Project list --------------------------------->
 
         <div class="col-sm-9 pull-right">
+          <!-- <div ng-repeat="portfolioItem in portfolioArray | filter:strict" class="ng-scope"> -->
             <div ng-repeat="portfolioItem in portfolioArray | genSearch:searchString | filter: searchFilter" class="ng-scope">
+
                 <div class="row">
                     <div class="col-lg-7 col-md-7">
                         <a ng-href="#/portfolio-project/{{portfolioItem.name | nospace }}"><img class="img-responsive" ng-src="{{portfolioItem.image}}"></a>

@@ -58,9 +58,42 @@ angular.module('portfolioApp.controllers', [])
         PortfolioListService.success(function(data) {
             $scope.portfolioList = data;
             $scope.portfolioArray =[];
+            $scope.technologyArray =[];
+
             for (var portfolioItem in $scope.portfolioList){
                 $scope.portfolioArray.push($scope.portfolioList[portfolioItem]);
+                var technolist = $scope.portfolioList[portfolioItem].technology;
+
+                for (var tech = 0; tech<technolist.length; tech++){
+                    if ($.inArray(technolist[tech], $scope.technologyArray) !=-1){
+                        var junk = 0;
+                    }
+                    else {
+                        $scope.technologyArray.push(technolist[tech]);
+                    }
+                }
             }
+
+                        console.log("The TechArray is: ");
+                        console.log($scope.technologyArray);
+//            for (var i = 0; i<$scope.portfolioArray.length; i++){
+//                for (var tech in $scope.portfolioList[i].technology){
+//                    if (tech in $scope.technologyArray){
+//                        console.log(tech);
+//                    }
+//                    else {
+//                        $scope.technologyArray.push(tech);
+//                    }
+//                }
+//                $scope.technologyArray.push($scope.portfolioList[portfolioItem]);
+//            }
+
+            console.log($scope.technologyArray);
+            console.log(JSON.stringify($scope.portfolioArray));
+
+
+
+
 
         });
         //console.log($scope.portfolioListArray);
@@ -107,8 +140,8 @@ angular.module('portfolioApp.controllers', [])
                 }
             };
 
-                $scope.MerchantList = _.uniq(_.pluck($scope.portfolioListArray, 'MerchantName'));
-                $scope.MerchantList = _.map($scope.MerchantList, function(Merchant){
+            $scope.MerchantList = _.uniq(_.pluck($scope.portfolioListArray, 'MerchantName'));
+            $scope.MerchantList = _.map($scope.MerchantList, function(Merchant){
                 return { Merchantname : $.trim(Merchant), status : false};
             });
                 $scope.BrandList = [];
