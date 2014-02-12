@@ -23,7 +23,6 @@
         "name": "Custom Proposal App",
         "headline": "Create custom proposals for your organization",
         "image": "img/proposaltool.png",
-        "BrandList": "RestfulAPI,AngularJS,HTML,CSS,Javascript,NodeJS,Mongo,Express,Jade",
         "technology": ["RestfulAPI","AAAAAHH","AngularJS","HTML","CSS","Javascript","NodeJS","Mongo","Express","Jade"],
         "description": "I built this app to allow companies to create their own client-facing proposals. In other words, this app will allow you to create an account, then create a new proposal, and dynamically fill it with custom questions. They can assign each question (and that question's options) a value (ex: $300 for option 'A'). This let's a sales team walk through the newly created survey with a client and give them an immediate price quote. "
 
@@ -33,7 +32,6 @@
         "name": "21 Zero",
         "headline": "My business for building sites, apps and marketing",
         "image": "img/21zerosite.png",
-        "BrandList": "HTML,CSS,Wordpress,MySQL",
         "technology": ["HTML","CSS","Wordpress","MySQL"],
         "description": "I stay pretty busy running my own business. In addition to building this site as an advertising piece, I work alongside my other developers to build many of our clients sites. We also build web apps and do a lot of online marketing. Search engine optimization (SEO), Pay Per Click (PPC), Social and content marketing"
     },
@@ -42,7 +40,6 @@
         "name": "Detour Journal",
         "headline": "Community of adventure motorcycle bloggers",
         "image": "img/detourjournal.png",
-        "BrandList": "HTML,CSS,Joomla,MySQL",
         "technology": ["HTML","CSS","Joomla","MySQL"],
         "description": "I built this site originally as a way to provide an income to the many awesome adventurers out there who are trying to support themselves while riding their motorcycles around the world. I chose to use Joomla! for this project because not only was I familiar with the CMS it had a perfect plugin that I could modify to allow users to signup, create an account and begin adding content to their very own adventure travel blog. The site also has a fully functioning e-commerce store that I have recently turned off as a result of issues with my supplier. But I hope to bring it back online soon!"
     },
@@ -51,7 +48,6 @@
         "name": "Dex Custom Websites",
         "headline": "Managed the development team that built 1000's of custom websites",
         "image": "img/dexcustom.png",
-        "BrandList": "HTML,CSS,Wordpress,MySQL,Magento",
         "technology": ["HTML","CSS","Wordpress","MySQL","Magento","Jira"],
         "description": "While employed with Boostability, I managed our multi-million dollar partnership with Dex One Media. And when they asked us to start building custom websites for their clients I was assigned to building up that product and department from scratch. Soon I was managing an entire team of web developers, designers, content writers, quality analysts and others who were building hundreds of fully customized websites for Dex clients. I continually optimized processes to get our customer satisfaction score to 96%, reduced our fulfillment costs by 76% and decreased the average time it took to build a custom website from 139 days to 37 days."
     },
@@ -60,7 +56,6 @@
         "name": "Conversion Jump",
         "headline": "My conversion rate optimization blog",
         "image": "img/conversionjump.jpg",
-        "BrandList": "HTML,CSS,Joomla,MySQL",
         "technology": ["HTML","CSS","Joomla","MySQL"],
         "description": "I no longer maintain this blog but I still love Conversion Rate Optimization. There is no easier way to double or triple your sales than to improve your websites conversion rate. I built this blog on the Joomla! CMS primarily because I wasn't concerned about building new features. It was afterall, just a blog that allowed me to learn a lot about one of my favorite topics."
     },
@@ -69,7 +64,6 @@
         "name": "The Canyons Pass",
         "headline": "Increased the conversion rate from 6% to 43%",
         "image": "img/canyonspass.jpg",
-        "BrandList": "HTML,CSS",
         "technology": ["HTML","CSS","Joomla","MySQL"],
         "description": "I created this site for one reason only... Get free Season Ski Passes. In college I became an affiliate for one of the major local ski resorts, and for every 10 season passes I sold I got a free pass for myself and my friends. Not having the time to got out and sell in person, I built TheCanyonsPass.com and ran a high converting online ad campaign that did all the work for me. It was great!"
     }
