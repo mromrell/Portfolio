@@ -23,7 +23,7 @@
         "name": "Custom Proposal App",
         "headline": "Create custom proposals for your organization",
         "image": "img/proposaltool.png",
-        "technology": ["RestfulAPI","AAAAAHH","AngularJS","HTML","CSS","Javascript","NodeJS","Mongo","Express","Jade"],
+        "technology": ["RestfulAPI","AngularJS","HTML","CSS","Javascript","NodeJS","Mongo","Express","Jade"],
         "description": "I built this app to allow companies to create their own client-facing proposals. In other words, this app will allow you to create an account, then create a new proposal, and dynamically fill it with custom questions. They can assign each question (and that question's options) a value (ex: $300 for option 'A'). This let's a sales team walk through the newly created survey with a client and give them an immediate price quote. "
 
     },
