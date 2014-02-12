@@ -94,6 +94,7 @@ border-left: 5px solid #bce8f1;
 	-moz-border-radius: 25px;
 	background: url(../img/headshot-mini.jpg) no-repeat;
     float: left;
+    margin-right: 15px;
 	}
 .thin{
     font-weight: 100;
