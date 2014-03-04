@@ -1,7 +1,25 @@
 {
 
-    "storm-pig": {
+    "quota-deck": {
         "id": "1",
+        "name": "Quota Deck",
+        "headline": "Winner at Provo's Startup Weekend",
+        "image": "img/quotadeck.jpg",
+        "BrandList": "HTML,CSS,Django,Python,AngularJS,Javascript",
+        "technology": ["HTML","CSS","Django","Python","AngularJS","Javascript"],
+        "description": "Quota Deck started as a pitch at Provo's Startup Weekend, a 58 hour competition to see who can build the most complete business from scratch. That meant not just developing the code, but validating the idea and signing up users, lots of them. By the end of the competition we had signed up 107 beta users, garnered interest from several investors and had a pretty functional product where users could sign up and hire freelance sales reps to grow their sales teams on demand. Sales reps could browse job postings and bid on various jobs. Think Elance for sales people. It was a success and we ended up beating out 11 other amazing teams to take the top honors and win Provo's Startup Weekend!"
+    },
+    "allergy-hero": {
+        "id": "2",
+        "name": "Allergy Hero",
+        "headline": "Javascript game w/ HTML Canvas",
+        "image": "img/allergyhero.jpg",
+        "BrandList": "HTML,Javascript",
+        "technology": ["HTML","Javascript"],
+        "description": "We had a 12 year old girl come in with an idea to build an app that her younger brother could play as a way to teach him which foods he could eat and avoid his allergic reaction to peanuts. So with a short time frame to complete this project, I built a Javascript game that uses HTML Canvas to guide our jet pack flying hero through an array of falling food choices."
+    },
+    "storm-pig": {
+        "id": "3",
         "name": "Storm Pig",
         "headline": "Crowdfunding for Events",
         "image": "img/stormpig.jpg",
@@ -10,7 +28,7 @@
         "description": "For this app I wanted to test out a new payment API and use the Angular UI Calendar library to try and do some cool things with events. Storm Pig was built as a result. It's a crowdfunding application that's geared explicitly for events such as 5k's, races, rallies and other local events. This app let's users create accounts and post new events with funding goals (for example: This event needs to raise $3,000). Then Participants can pre-register for an event but not get charged until the event reaches it's funding goal. There are a lot of other features and functionality built into this app like being able to edit events once they are posted, and being able to pay extra to promote your event. Users can also opt to sponsor another event as a corporate Sponsor among other things."
     },
     "placer": {
-        "id": "2",
+        "id": "4",
         "name": "Placer",
         "headline": "Community for travels and explorers",
         "image": "img/placerscreenshot.jpg",
@@ -19,7 +37,7 @@
         "description": "I like to explore new things, so I really love finding cool new places that many people don't really know about. I built this web application so that I (and anyone else who wants to join) can share the cool places they are are finding. This site is built with AngularJS and javascript on the frontend and powered by Django and Python on the server-side. I like Django because it's pretty straightforward and well documented. It's worth noting that I built everything on this site from scratch including the Login, Create and edit a location, the Ajax Filters and the javascript logic that powers all the dynamic content you see on the site. And yes, just about everything on the site is dynamic and responsive."
     },
     "custom-proposal-app": {
-        "id": "3",
+        "id": "5",
         "name": "Custom Proposal App",
         "headline": "Create custom proposals for your organization",
         "image": "img/proposaltool.png",
@@ -28,7 +46,7 @@
 
     },
     "21-zero": {
-        "id": "4",
+        "id": "6",
         "name": "21 Zero",
         "headline": "My business for building sites, apps and marketing",
         "image": "img/21zerosite.png",
@@ -36,7 +54,7 @@
         "description": "I stay pretty busy running my own business. In addition to building this site as an advertising piece, I work alongside my other developers to build many of our clients sites. We also build web apps and do a lot of online marketing. Search engine optimization (SEO), Pay Per Click (PPC), Social and content marketing"
     },
     "detour-journal": {
-        "id": "5",
+        "id": "7",
         "name": "Detour Journal",
         "headline": "Community of adventure motorcycle bloggers",
         "image": "img/detourjournal.png",
@@ -44,7 +62,7 @@
         "description": "I built this site originally as a way to provide an income to the many awesome adventurers out there who are trying to support themselves while riding their motorcycles around the world. I chose to use Joomla! for this project because not only was I familiar with the CMS it had a perfect plugin that I could modify to allow users to signup, create an account and begin adding content to their very own adventure travel blog. The site also has a fully functioning e-commerce store that I have recently turned off as a result of issues with my supplier. But I hope to bring it back online soon!"
     },
     "dex-custom-websites": {
-        "id": "6",
+        "id": "8",
         "name": "Dex Custom Websites",
         "headline": "Managed the development team that built 1000's of custom websites",
         "image": "img/dexcustom.png",
@@ -52,7 +70,7 @@
         "description": "While employed with Boostability, I managed our multi-million dollar partnership with Dex One Media. And when they asked us to start building custom websites for their clients I was assigned to building up that product and department from scratch. Soon I was managing an entire team of web developers, designers, content writers, quality analysts and others who were building hundreds of fully customized websites for Dex clients. I continually optimized processes to get our customer satisfaction score to 96%, reduced our fulfillment costs by 76% and decreased the average time it took to build a custom website from 139 days to 37 days."
     },
     "conversion-jump": {
-        "id": "7",
+        "id": "9",
         "name": "Conversion Jump",
         "headline": "My conversion rate optimization blog",
         "image": "img/conversionjump.jpg",
@@ -60,7 +78,7 @@
         "description": "I no longer maintain this blog but I still love Conversion Rate Optimization. There is no easier way to double or triple your sales than to improve your websites conversion rate. I built this blog on the Joomla! CMS primarily because I wasn't concerned about building new features. It was afterall, just a blog that allowed me to learn a lot about one of my favorite topics."
     },
     "the-canyons-pass": {
-        "id": "8",
+        "id": "10",
         "name": "The Canyons Pass",
         "headline": "Increased the conversion rate from 6% to 43%",
         "image": "img/canyonspass.jpg",
